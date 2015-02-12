@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-	<appender name="KAFKA"
-		class="com.github.ptgoetz.logback.kafka.KafkaAppender">
-		<topic>mytopic</topic>
-		<zookeeperHost>localhost:2181</zookeeperHost>
-	</appender>
-	<root level="debug">
-		<appender-ref ref="KAFKA" />
-	</root>
+    <appender name="KAFKA"
+              class="org.clojars.canawar.logback.KafkaAppender">
+        <topic>mytopic</topic>
+        <zookeeperHost>localhost:2181</zookeeperHost>
+        <brokerList>localhost:9093</brokerList>
+    </appender>
+    <root level="debug">
+        <appender-ref ref="KAFKA"/>
+    </root>
 </configuration>
