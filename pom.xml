@@ -78,7 +78,6 @@
                     <artifactId>jmxtools</artifactId>
                 </exclusion>
             </exclusions>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <artifactId>slf4j-api</artifactId>
